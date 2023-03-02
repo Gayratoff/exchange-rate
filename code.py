@@ -6,7 +6,7 @@ api_id = 9797655 #API_ID : https://my.telegram.org/
 api_hash = "5bab03171ae5e0d92ixx0ce70137943c" #API_HASH : https://my.telegram.org/
 app = Client("KingsOfPy", api_id, api_hash,parse_mode=enums.parse_mode.ParseMode.HTML)
 
-
+#Dasturchi @MrGayratov kanal :@KingsOfPy
 
 async def rubl_to_uzs(pul):
     po = 0
@@ -23,7 +23,8 @@ async def rubl_to_uzs(pul):
 
 
 
-@app.on_message(filters.command(commands='x',prefixes='.'))
+#Dasturchi @MrGayratov kanal :@KingsOfPy
+@app.on_message(filters.command(commands='kurs',prefixes='.'))
 async def hello(client, message):
     money = ['JPY', 'RUB', 'USD','EUR']
     pul = []
@@ -32,7 +33,7 @@ async def hello(client, message):
     await app.edit_message_text(
           chat_id=message.chat.id,
           message_id=message.id,
-          text=f"<b>1 EURO💶  - {pul[0]} So'm\n</b>"  
+          text=f"<b>1 EURO💶  - {pul[3]} So'm\n</b>"  
                f"<b>1 JPY💴 - {pul[0]} So'm\n</b>"
                f"<b>1 RUB💴 - {pul[1]} So'm\n</b>"
                f"<b>1 USD💵 - {pul[2]} So'm\n</b>"
@@ -41,5 +42,6 @@ async def hello(client, message):
      )
 
 
+#Dasturchi @MrGayratov kanal :@KingsOfPy
 # Asosiy ishlash bo'limi.
 app.run()
