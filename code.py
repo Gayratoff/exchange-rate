@@ -2,8 +2,8 @@ from pyrogram import Client, filters, types,enums
 import requests
 import xml.etree.ElementTree as ET
 
-api_id = 9899039 #API_ID : https://my.telegram.org/
-api_hash = "5bab03171ae5e0d92e3e0ce70137943c" #API_HASH : https://my.telegram.org/
+api_id = 9797655 #API_ID : https://my.telegram.org/
+api_hash = "5bab03171ae5e0d92ixx0ce70137943c" #API_HASH : https://my.telegram.org/
 app = Client("KingsOfPy", api_id, api_hash,parse_mode=enums.parse_mode.ParseMode.HTML)
 
 
@@ -29,8 +29,6 @@ async def hello(client, message):
     pul = []
     for x in money:
         pul.append(await rubl_to_uzs(x))
-
-    print(pul[0])
     await app.edit_message_text(
           chat_id=message.chat.id,
           message_id=message.id,
